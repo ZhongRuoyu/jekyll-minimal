@@ -23,12 +23,12 @@
 {% endif %}
 {% endunless %}
 
-{% assign header_class = "my-5" %}
+{% assign header_classes = "my-5" %}
 {% if display_components == 1 %}
-{% assign header_class = "mt-5 mb-3" %}
+{% assign header_classes = "mt-5 mb-3" %}
 {% endif %}
 
-<header class="{{ header_class }}">
+<header class="{{ header_classes }}">
   {% if show_title_or_subtitle -%}
   {%- if title -%}
   <h1>{{ title }}</h1>
