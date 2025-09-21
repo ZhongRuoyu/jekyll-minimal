@@ -4,14 +4,13 @@ layout: default
 
 <div class="container d-flex flex-column flex-container">
   {% include navigation.html %}
-  <div class="container container-body d-flex flex-column flex-body
-    {%- if page.center -%}
-    {{- " " -}}
-    justify-content-center text-center
-    {%- endif -%}
-    {{- " " -}}
-    mb-5
-  ">
+  {%- assign div_classes = "container container-body d-flex flex-column flex-body" -%}
+  {%- if page.center -%}
+  {%- assign div_classes = div_classes | append: " justify-content-center text-center" -%}
+  {%- else -%}
+  {%- assign div_classes = div_classes | append: " mb-5" -%}
+  {%- endif -%}
+  <div class="{{ div_classes }}">
     <main>
       <article>
         {% include header.html %}
