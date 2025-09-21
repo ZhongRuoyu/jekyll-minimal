@@ -2,7 +2,11 @@
   <nav class="navbar navbar-expand d-print-none px-0 py-0">
     <ul class="nav">
       {% for item in site.navigation_items -%}
-      <li class="nav-item ms-0 me-4 mt-0 mb-3">
+      {%- assign li_classes = "nav-item ms-0 me-4 mt-0 mb-3" -%}
+      {%- if forloop.last -%}
+      {%- assign li_classes = "nav-item ms-0 me-0 mt-0 mb-3" -%}
+      {%- endif -%}
+      <li class="{{ li_classes }}">
         <a class="nav-link text-nowrap px-0 py-0" href="
         {%- if item.url -%}
         {{- item.url -}}
