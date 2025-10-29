@@ -12,11 +12,13 @@ layout: page
     <a href="{{ post.url | relative_url }}" class="text-reset text-decoration-none">
       <h2 class="no-anchor">{{ post.title }}</h2>
       {% if post.date -%}
+      {% unless post.hide_date -%}
       <div class="text-muted my-2">
         <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S.%3N" }}">
           {{- post.date | date: site.date_format | default: "%a, %e %b %Y %H:%M:%S %Z" -}}
         </time>
       </div>
+      {%- endunless %}
       {%- endif %}
     </a>
     {% if post.description -%}
