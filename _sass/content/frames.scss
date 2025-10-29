@@ -1,4 +1,8 @@
-main iframe {
+main iframe,
+main div:has(> iframe) {
   display: block;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
