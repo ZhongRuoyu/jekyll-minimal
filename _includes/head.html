@@ -31,9 +31,7 @@
     integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  {% if site.seo -%}
   {%- seo title=false -%}
-  {%- endif %}
 
   {% if site.google_analytics -%}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
