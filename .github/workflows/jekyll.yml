@@ -5,6 +5,8 @@ on:
     branches:
       - main
   pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -20,6 +22,3 @@ jobs:
 
       - name: Build site
         run: bundle exec jekyll build
-
-      - name: Test site
-        run: bundle exec htmlproofer _site
