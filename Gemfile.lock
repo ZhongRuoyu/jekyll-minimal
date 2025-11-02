@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     minimal (0)
-      jekyll (~> 4.3)
+      jekyll (~> 4)
       jekyll-redirect-from
       jekyll-seo-tag
       jekyll-sitemap
