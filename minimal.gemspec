@@ -13,9 +13,7 @@ Gem::Specification.new do |spec|
   }
 
   spec.add_dependency "jekyll", "~> 4"
-  spec.add_dependency "jekyll-redirect-from"
   spec.add_dependency "jekyll-seo-tag"
-  spec.add_dependency "jekyll-sitemap"
 
   spec.files =
     `git ls-files -z`

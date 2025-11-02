@@ -8,8 +8,8 @@ See also its successor, a same-named theme for [Hugo](https://gohugo.io/), at
 
 ## Usage
 
-To use this theme, you can fork this repository and replace the configs and
-contents with your own.
+To use this theme, you can fork this repository and add your configs and
+contents.
 
 Additionally, you can declare this theme as a gem in your `Gemfile`:
 
@@ -23,12 +23,10 @@ Then, add the following to your `_config.yml`:
 theme: minimal
 ```
 
-If you use the gem-based approach, make sure to override the configs found in
-[`_config.yml`](https://github.com/ZhongRuoyu/jekyll-minimal/blob/HEAD/_config.yml).
-
 ## Live Demo
 
-A live demo is available [here](https://jekyll-minimal.ruoyu.io).
+A live demo is available at <https://jekyll-minimal.ruoyu.io>
+([GitHub repository](https://github.com/ZhongRuoyu/jekyll-minimal-demo)).
 
 ## License
 
