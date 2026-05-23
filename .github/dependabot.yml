@@ -3,6 +3,8 @@ version: 2
 updates:
   - package-ecosystem: github-actions
     directory: /
+    allow:
+      - dependency-type: all
     schedule:
       interval: weekly
       day: sunday
@@ -10,9 +12,10 @@ updates:
       github-actions:
         patterns:
           - "*"
-
   - package-ecosystem: bundler
     directory: /
+    allow:
+      - dependency-type: all
     schedule:
       interval: weekly
       day: sunday
